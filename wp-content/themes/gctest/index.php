@@ -23,6 +23,10 @@ get_header(); ?>
 		// Include the featured content template.
 		get_template_part( 'featured-content' );
 	}
+
+    if ( is_home() ) {
+    query_posts( "page_id=5" );
+    }
 ?>
 
 	<div id="primary" class="content-area">
