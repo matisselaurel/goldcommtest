@@ -24,48 +24,39 @@ get_header(); ?>
 		get_template_part( 'featured-content' );
 	}
 
- <?php
-if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
-    // Include the featured content template.
-    get_template_part( 'featured-content' );
-}
+            if ( is_home() ) {
+                // query_posts( "page_id=5" );
 
-        if ( is_home() ) {
-            query_posts( "page_id=5" );
-        }
+            $args2 = array(
+		"page_id" => "5",
+		"ord" => "asc"
+		);
+            $wp_query2 = new WP_Query($args2);
+			if ( $wp_query2->have_posts() ) :
+				// Start the Loop.
+				while ( $wp_query2->have_posts() ) : the_post();
 
-$args2 = array(
-    "page_id" => 5
-);
-$wp_query2 = new WP_Query($args2);
-if ( $wp_query2->have_posts() ) :
-            // Start the Loop.
-            while ( $wp_query2->have_posts() ) : the_post();
+					$wp_query2->the_post();
+					//echo '<h1>'.get_the_title().'</h1>';
+					/*
+					 * Include the post format-specific template for the content. If you want to
+					 * use this in a child theme, then include a file called called content-___.php
+					 * (where ___ is the post format) and that will be used instead.
+					 */
+					 get_template_part( 'content', get_post_format() );
 
-                $wp_query2->the_post();
-                //echo '<h1>'.get_the_title().'</h1>';
-                /*
-                 * Include the post format-specific template for the content. If you want to
-                 * use this in a child theme, then include a file called called content-___.php
-                 * (where ___ is the post format) and that will be used instead.
-                 */
-                 get_template_part( 'content', get_post_format() );
+				endwhile;
+				//wp_reset_post_data();
+				// Previous/next post navigation.
+				twentyfourteen_paging_nav();
 
-            endwhile;
-            //wp_reset_post_data();
-            // Previous/next post navigation.
-            twentyfourteen_paging_nav();
+			else :
+				// If no content, include the "No posts found" template.
+				get_template_part( 'content', 'none' );
 
-        else :
-            // If no content, include the "No posts found" template.
-            get_template_part( 'content', 'none' );
-
-        endif;
+			endif;
+	}
 ?>
-
-
-
-
 
 <?php //wp_reset_query(); ?>
 
