@@ -24,7 +24,13 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel='stylesheet' id='twentyfourteen-style-css'  href='<?php bloginfo('template_url'); ?>/css/supersized.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/supersized.shutter.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.easing.min.js"></script>
+
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/supersized.3.2.7.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/supersized.shutter.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/matisse.js"></script>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
