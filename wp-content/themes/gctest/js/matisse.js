@@ -1,1 +1,5 @@
-test
+ (function($) {
+    $(document).ready(function() {
+
+    });
+  })(jQuery);
