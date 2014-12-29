@@ -1,5 +1,6 @@
  (function($) {
     $(document).ready(function() {
-        alert('loaded');
+        var images = $( "#featured-images" ).html();
+        $('#cbp-bislideshow').append(images);
     });
   })(jQuery);
