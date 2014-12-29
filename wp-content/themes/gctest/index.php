@@ -177,6 +177,8 @@ get_header(); ?>
 				cbpBGSlideshow.init();
 			});
 		</script>
+
+		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/matisse.js"></script>
 <?php
 get_sidebar();
 get_footer();
