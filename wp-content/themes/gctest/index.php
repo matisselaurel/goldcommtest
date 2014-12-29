@@ -141,13 +141,42 @@ get_header(); ?>
 
 
 
-
+<div class="container">
+	<header class="clearfix">
+		<span>Blueprint</span>
+		<h1>Background Slideshow</h1>
+		<nav>
+			<a href="http://tympanus.net/Blueprints/ResponsiveFullWidthGrid/" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
+			<a href="http://tympanus.net/codrops/?p=14667" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
+		</nav>
+	</header>
+	<div class="main">
+		<ul id="cbp-bislideshow" class="cbp-bislideshow">
+			<li><img src="http://matisse.local/wp-content/uploads/2014/12/Screen-Shot-2013-11-01-at-10.02.28-PM.png" alt="image01"/></li>
+			<li><img src="http://matisse.local/wp-content/uploads/2014/12/m2-359x372.png" alt="image02"/></li>
+			<li><img src="http://matisse.local/wp-content/uploads/2014/12/Screen-Shot-2013-12-22-at-11.01.34-PM-359x372.png" alt="image03"/></li>
+		</ul>
+		<div id="cbp-bicontrols" class="cbp-bicontrols">
+			<span class="cbp-biprev"></span>
+			<span class="cbp-bipause"></span>
+			<span class="cbp-binext"></span>
+		</div>
+	</div>
+</div>
 
 
 	</div><!-- #primary -->
 	<?php get_sidebar( 'content' ); ?>
 </div><!-- #main-content -->
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
+		<script src="<?php bloginfo('template_url'); ?>/js/jquery.imagesloaded.min.js"></script>
+		<script src="<?php bloginfo('template_url'); ?>/js/cbpBGSlideshow.min.js"></script>
+		<script>
+			$(function() {
+				cbpBGSlideshow.init();
+			});
+		</script>
 <?php
 get_sidebar();
 get_footer();
