@@ -29,3 +29,5 @@
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/matisse.gallery.js"></script>
