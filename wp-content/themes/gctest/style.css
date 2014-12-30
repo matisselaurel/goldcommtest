@@ -938,6 +938,8 @@ span + .edit-link:before,
 .site-navigation ul {
 	list-style: none;
 	margin: 0;
+	top: 29%;
+	position: absolute;
 }
 
 .site-navigation li {
@@ -3499,12 +3501,16 @@ a.post-thumbnail:hover {
 		height: 48px;
 		line-height: 48px;
 		position: relative;
+		width: 100%;
 	}
 
 	.primary-navigation a {
 		display: inline-block;
 		padding: 0 12px;
 		white-space: nowrap;
+		width: 100%;
+		float: left;
+		padding: 0 190px;
 	}
 
 	.primary-navigation ul ul {
@@ -4330,7 +4336,7 @@ a.post-thumbnail:hover {
 	position: absolute;
 	width: 40%;
 	height: 270px;
-	background: rgba(0,0,0,.75);
+	background: rgba(0,0,0,.95);
 }
 .contact-form {
 	width: 50%;
