@@ -64,3 +64,4 @@
 
 	<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
 </article><!-- #post-## -->
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/matisse.js"></script>

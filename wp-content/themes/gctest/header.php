@@ -28,6 +28,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/default.css" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/component.css" />
 	<script src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.js"></script>
+	<?php if ( !is_home() ):?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<?php endif; ?>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/matisse.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>

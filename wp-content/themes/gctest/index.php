@@ -169,7 +169,10 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<?php get_sidebar( 'content' ); ?>
 </div><!-- #main-content -->
+
+		<?php if ( is_home() ) :?>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<? endif;?>
 		<!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
 		<script src="<?php bloginfo('template_url'); ?>/js/jquery.imagesloaded.min.js"></script>
 		<script src="<?php bloginfo('template_url'); ?>/js/cbpBGSlideshow.min.js"></script>
@@ -179,7 +182,6 @@ get_header(); ?>
 			});
 		</script>
 
-		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/matisse.js"></script>
 <?php
 get_sidebar();
 get_footer();
