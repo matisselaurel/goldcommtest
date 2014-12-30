@@ -818,7 +818,7 @@ span + .edit-link:before,
  */
 
 .site {
-	max-width: 1260px;
+	/*max-width: 1260px;*/
 	position: relative;
 }
 
@@ -844,7 +844,7 @@ span + .edit-link:before,
 }
 
 .site-header {
-	max-width: 1260px;
+	max-width: 1400px;
 	position: relative;
 	width: 100%;
 	z-index: 4;
@@ -3446,7 +3446,7 @@ a.post-thumbnail:hover {
 	/* Fixed Header */
 
 	.masthead-fixed .site-header {
-		position: fixed;
+		position: relative;
 		top: 0;
 	}
 
@@ -4304,18 +4304,41 @@ a.post-thumbnail:hover {
 		line-height: 36px;
 	}
 }
-        .nav-toggle {
-            margin-right: 0;
-            width: 30px;
-            height: 30px;
-            padding: 15px;
-            margin-right: 30px;
-            float: right;
-            color: white;
-        }
-        .overlay {
-width: 100%;
-height: 3000px;
-background: rgba(0,0,0,.75);
-position: fixed;
+.nav-toggle {
+	margin-right: 0;
+	width: 30px;
+	height: 30px;
+	padding: 15px;
+	margin-right: 30px;
+	float: right;
+}
+.overlay {
+	width: 100%;
+	height: 3000px;
+	background: rgba(0,0,0,.75);
+	position: fixed;
+}
+.fa-bars {
+	color: white !important;
+}
+.hide {
+	display: none;
+}
+.nav-menu {
+	left: 30%;
+	top: 220%;
+	position: absolute;
+	width: 40%;
+	height: 270px;
+	background: rgba(0,0,0,.75);
+}
+.contact-form {
+	width: 50%;
+	position: relative;
+	float: left;
+	left: 36%;
+}
+.contact-form h1,
+.contact-form p {
+	color: white;
 }
