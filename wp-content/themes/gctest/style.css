@@ -844,7 +844,6 @@ span + .edit-link:before,
 }
 
 .site-header {
-	background-color: #000;
 	max-width: 1260px;
 	position: relative;
 	width: 100%;
@@ -4304,4 +4303,19 @@ a.post-thumbnail:hover {
 		font-size: 25pt;
 		line-height: 36px;
 	}
+}
+        .nav-toggle {
+            margin-right: 0;
+            width: 30px;
+            height: 30px;
+            padding: 15px;
+            margin-right: 30px;
+            float: right;
+            color: white;
+        }
+        .overlay {
+width: 100%;
+height: 3000px;
+background: rgba(0,0,0,.75);
+position: fixed;
 }

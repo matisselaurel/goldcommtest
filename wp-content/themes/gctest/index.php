@@ -109,14 +109,7 @@ get_header(); ?>
 
 
 <div class="container">
-	<header class="clearfix">
-		<span>Blueprint</span>
-		<h1>Background Slideshow</h1>
-		<nav>
-			<a href="http://tympanus.net/Blueprints/ResponsiveFullWidthGrid/" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
-			<a href="http://tympanus.net/codrops/?p=14667" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
-		</nav>
-	</header>
+
 	<div class="main">
 		<ul id="cbp-bislideshow" class="cbp-bislideshow">
 <!-- #Third loop to pull in featured images from gallery category -->
