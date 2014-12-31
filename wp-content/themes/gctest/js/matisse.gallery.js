@@ -1,7 +1,8 @@
  (function($) {
     $(document).ready(function() {
-        $('.jcarousel').jcarousel({
-        // Configuration goes here
+        $('.bxslider').bxSlider({
+            auto: true,
+            autoControls: true
         });
     });
   })(jQuery);

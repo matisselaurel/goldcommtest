@@ -29,5 +29,8 @@
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.jcarousel.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="<?php bloginfo('template_url'); ?>/css/jquery.bxslider.css" rel="stylesheet" />
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/matisse.gallery.js"></script>
