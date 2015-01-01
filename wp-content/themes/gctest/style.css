@@ -462,13 +462,13 @@ hr {
  * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
  */
 ::selection {
-	background: #24890d;
+
 	color: #fff;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #24890d;
+
 	color: #fff;
 	text-shadow: none;
 }
@@ -506,10 +506,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background-color: #24890d;
+	background-color: #f2df0f;
 	border: 0;
 	border-radius: 2px;
-	color: #fff;
+	color: #000;
 	font-size: 12px;
 	font-weight: 700;
 	padding: 10px 30px 11px;
@@ -527,8 +527,8 @@ input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-	background-color: #41a62a;
-	color: #fff;
+	background-color: #f2df0f;
+	color: #000;
 }
 
 button:active,
@@ -869,7 +869,7 @@ span + .edit-link:before,
 
 .site-title a,
 .site-title a:hover {
-	color: #fff;
+	color: #f2df0f;
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -951,20 +951,20 @@ span + .edit-link:before,
 }
 
 .site-navigation a {
-	color: #fff;
+	color: #000;
 	display: block;
 	text-transform: uppercase;
 }
 
 .site-navigation a:hover {
-	color: #41a62a;
+	color: black;
 }
 
 .site-navigation .current_page_item > a,
 .site-navigation .current_page_ancestor > a,
 .site-navigation .current-menu-item > a,
 .site-navigation .current-menu-ancestor > a {
-	color: #55d737;
+	color: #000;
 	font-weight: 900;
 }
 
@@ -3466,7 +3466,7 @@ a.post-thumbnail:hover {
 	.site-navigation li .current_page_ancestor > a,
 	.site-navigation li .current-menu-item > a,
 	.site-navigation li .current-menu-ancestor > a {
-		color: #fff;
+		color: #000 !important;
 	}
 
 	/* Primary Navigation */
@@ -3511,6 +3511,7 @@ a.post-thumbnail:hover {
 		width: 100%;
 		float: left;
 		padding: 0 190px;
+		font-size: 23px;
 	}
 
 	.primary-navigation ul ul {
@@ -3543,13 +3544,14 @@ a.post-thumbnail:hover {
 
 	.primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
-		background-color: #24890d;
+		background-color: black;
 		color: #fff;
 	}
 
 	.primary-navigation ul ul a:hover,
 	.primary-navigation ul ul li.focus > a {
 		background-color: #41a62a;
+		color: black !important;
 	}
 
 	.primary-navigation ul li:hover > ul,
@@ -4325,7 +4327,7 @@ a.post-thumbnail:hover {
 	position: fixed;
 }
 .fa-bars {
-	color: white !important;
+	color: #f2df0f !important;
 }
 .hide {
 	display: none;
@@ -4336,13 +4338,12 @@ a.post-thumbnail:hover {
 	position: absolute;
 	width: 40%;
 	height: 270px;
-	background: rgba(0,0,0,.95);
+	background: rgba(167,154,7,.95);
 }
 .contact-form {
 	width: 50%;
 	position: relative;
-	float: left;
-	left: 36%;
+	margin: 0 auto;
 }
 .contact-form h1,
 .contact-form p {
